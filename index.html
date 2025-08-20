@@ -270,6 +270,7 @@
             background: white;
             box-shadow: var(--shadow);
             transition: all 0.3s ease;
+            margin-bottom: 2rem;
         }
 
         .project-card:hover {
@@ -431,6 +432,35 @@
             animation-delay: 4s;
         }
 
+        /* Project Icons */
+        .project-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .diabetes-icon { color: #e74c3c; }
+        .house-icon { color: #3498db; }
+        .recipe-icon { color: #f39c12; }
+
+        .stat-item {
+            background: rgba(37, 99, 235, 0.1);
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .internship-badge {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
         @keyframes float {
             0%, 100% { transform: translateY(0px) rotate(0deg); }
             50% { transform: translateY(-20px) rotate(180deg); }
@@ -532,9 +562,7 @@
                 </div>
                 <div class="col-lg-6 text-center">
                     <div class="profile-placeholder">
-
                         <img src="photo.jfif" class="profile-image">
-
                     </div>
                 </div>
             </div>
@@ -550,19 +578,19 @@
                     <div class="card">
                         <div class="card-body p-4">
                             <p class="lead text-center mb-4">
-                                Recent MCA graduate with a strong foundation in Data Science, Machine Learning,
-                                and Artificial Intelligence. Seeking entry-level positions as a Data Scientist
-                                or ML Engineer to apply technical expertise in Python programming, statistical
-                                analysis, and predictive modeling.
+                                Recent MCA graduate with a strong foundation in Python and data analysis, Machine Learning,
+                                and Data Science. Seeking entry-level data analyst and data scientist positions to apply
+                                technical skills and contribute to innovative projects. Currently gaining hands-on experience
+                                as a Data Science Intern at Anyatam Adhyayan Education Pvt. Ltd.
                             </p>
                             <div class="row mt-4">
                                 <div class="col-md-6">
                                     <h5><i class="fas fa-chart-line text-primary me-2"></i>Data Analytics Expert</h5>
-                                    <p>Proficient in statistical analysis, data visualization, and business intelligence using Python, Pandas, and advanced ML libraries.</p>
+                                    <p>Passionate about turning data into actionable insights and solving real-world problems through analytics. Experienced in data cleaning, visualization, and building predictive models.</p>
                                 </div>
                                 <div class="col-md-6">
                                     <h5><i class="fas fa-robot text-primary me-2"></i>AI & ML Specialist</h5>
-                                    <p>Experienced in developing machine learning models, deep learning algorithms, and predictive analytics solutions.</p>
+                                    <p>Experienced in developing machine learning models, deep learning algorithms, and predictive analytics solutions using Python and scikit-learn.</p>
                                 </div>
                             </div>
                         </div>
@@ -597,6 +625,8 @@
                         </div>
                         <div class="card-body">
                             <span class="skill-tag ml-skill">Scikit-learn</span>
+                            <span class="skill-tag ml-skill">Decision Tree Classifier</span>
+                            <span class="skill-tag ml-skill">Linear Regression</span>
                         </div>
                     </div>
                 </div>
@@ -623,8 +653,10 @@
                             <span class="skill-tag">Visual Studio Code</span>
                             <span class="skill-tag">MySQL Workbench</span>
                             <span class="skill-tag">Excel</span>
+                            <span class="skill-tag">PyCharm</span>
                             <span class="skill-tag">Flask</span>
-                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">HTML</span>
+                            <span class="skill-tag">CSS</span>
                         </div>
                     </div>
                 </div>
@@ -639,7 +671,11 @@
                             <span class="skill-tag ai-skill">Artificial Intelligence</span>
                             <span class="skill-tag ml-skill">Machine Learning</span>
                             <span class="skill-tag data-skill">Data Science</span>
-                            <span class="skill-tag">Clustering</span>
+                            <span class="skill-tag data-skill">Data Preprocessing</span>
+                            <span class="skill-tag ml-skill">Predictive Modeling</span>
+                            <span class="skill-tag ai-skill">Text Generation</span>
+                            <span class="skill-tag data-skill">Data Cleaning</span>
+                            <span class="skill-tag data-skill">Data Visualization</span>
                         </div>
                     </div>
                 </div>
@@ -651,26 +687,93 @@
     <section id="projects" class="section-padding bg-light">
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
+
+            <!-- Diabetes Prediction Project -->
+            <div class="row mb-5">
+                <div class="col-12">
                     <div class="project-card">
                         <div class="card-body p-4">
                             <div class="row align-items-center">
                                 <div class="col-md-8">
                                     <h4 class="card-title mb-3">
-                                        <i class="fas fa-home text-primary me-2"></i>
-                                        House Price Prediction System
+                                        <i class="fas fa-heartbeat diabetes-icon me-2"></i>
+                                        Diabetes Prediction using Machine Learning
                                     </h4>
                                     <p class="card-text mb-3">
-                                        Advanced machine learning model using Linear Regression to predict real estate prices.
-                                        Features comprehensive data analysis, interactive visualizations, and real-time prediction interface.
+                                        Developed a comprehensive machine learning model to predict diabetes risk using the Decision Tree Classifier.
+                                        Implemented advanced data preprocessing techniques including handling missing values, encoding, and normalization
+                                        with Pandas to improve model accuracy. Achieved reliable prediction performance through train-test split and
+                                        comprehensive evaluation metrics.
                                     </p>
                                     <div class="mb-3">
                                         <span class="skill-tag python-skill">Python</span>
                                         <span class="skill-tag data-skill">Pandas</span>
-                                        <span class="skill-tag data-skill">NumPy</span>
                                         <span class="skill-tag ml-skill">Scikit-learn</span>
-                                        <span class="skill-tag data-skill">Matplotlib</span>
+                                        <span class="skill-tag ml-skill">Decision Tree Classifier</span>
+                                        <span class="skill-tag data-skill">Data Preprocessing</span>
+                                        <span class="skill-tag">Flask</span>
+                                    </div>
+                                    <div class="key-features">
+                                        <h6><i class="fas fa-check-circle text-success me-2"></i>Key Features:</h6>
+                                        <ul class="list-unstyled">
+                                            <li><i class="fas fa-caret-right text-primary me-2"></i>Decision Tree Classifier with high interpretability</li>
+                                            <li><i class="fas fa-caret-right text-primary me-2"></i>Advanced data preprocessing and normalization</li>
+                                            <li><i class="fas fa-caret-right text-primary me-2"></i>Comprehensive handling of missing values and encoding</li>
+                                            <li><i class="fas fa-caret-right text-primary me-2"></i>Train-test split validation with performance metrics</li>
+                                            <li><i class="fas fa-caret-right text-primary me-2"></i>Web-based interface for real-time predictions</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 text-center">
+                                    <div class="project-demo mb-3">
+                                        <i class="fas fa-heartbeat diabetes-icon fa-5x mb-3"></i>
+                                        <div class="demo-stats">
+                                            <div class="stat-item">
+                                                <strong>Algorithm</strong>
+                                                <p>Decision Tree Classifier</p>
+                                            </div>
+                                            <div class="stat-item">
+                                                <strong>Focus</strong>
+                                                <p>Healthcare Analytics</p>
+                                            </div>
+                                            <div class="stat-item">
+                                                <strong>Deployment</strong>
+                                                <p>PythonAnywhere</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="https://rutuja68.pythonanywhere.com/" target="_blank" class="btn btn-primary btn-sm w-100 mb-2">
+                                        <i class="fas fa-external-link-alt me-2"></i>View Live Demo
+                                    </a>
+                                    <small class="text-muted d-block">Predict diabetes risk instantly</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- House Price Prediction Project -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="project-card">
+                        <div class="card-body p-4">
+                            <div class="row align-items-center">
+                                <div class="col-md-8">
+                                    <h4 class="card-title mb-3">
+                                        <i class="fas fa-home house-icon me-2"></i>
+                                        House Price Prediction using Machine Learning
+                                    </h4>
+                                    <p class="card-text mb-3">
+                                        Built a sophisticated machine learning model using Linear Regression to predict house prices based on key features.
+                                        Utilized Pandas for comprehensive dataset handling and performed train-test split for robust model evaluation.
+                                        Achieved accurate predictions through proper preprocessing and model tuning techniques.
+                                    </p>
+                                    <div class="mb-3">
+                                        <span class="skill-tag python-skill">Python</span>
+                                        <span class="skill-tag data-skill">Pandas</span>
+                                        <span class="skill-tag ml-skill">Scikit-learn</span>
+                                        <span class="skill-tag ml-skill">Linear Regression</span>
                                         <span class="skill-tag">Flask</span>
                                     </div>
                                     <div class="key-features">
@@ -678,18 +781,22 @@
                                         <ul class="list-unstyled">
                                             <li><i class="fas fa-caret-right text-primary me-2"></i>Linear Regression model with high accuracy</li>
                                             <li><i class="fas fa-caret-right text-primary me-2"></i>Interactive web interface for real-time predictions</li>
-                                            <li><i class="fas fa-caret-right text-primary me-2"></i>Comprehensive data visualization and trend analysis</li>
-                                            <li><i class="fas fa-caret-right text-primary me-2"></i>Feature correlation analysis and price pattern insights</li>
+                                            <li><i class="fas fa-caret-right text-primary me-2"></i>Comprehensive data preprocessing and feature analysis</li>
+                                            <li><i class="fas fa-caret-right text-primary me-2"></i>Model tuning for optimal performance</li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="col-md-4 text-center">
                                     <div class="project-demo mb-3">
-                                        <i class="fas fa-chart-line fa-5x text-primary mb-3"></i>
+                                        <i class="fas fa-home house-icon fa-5x mb-3"></i>
                                         <div class="demo-stats">
                                             <div class="stat-item">
                                                 <strong>ML Model</strong>
                                                 <p>Linear Regression</p>
+                                            </div>
+                                            <div class="stat-item">
+                                                <strong>Domain</strong>
+                                                <p>Real Estate</p>
                                             </div>
                                             <div class="stat-item">
                                                 <strong>Deployment</strong>
@@ -700,7 +807,71 @@
                                     <a href="https://pawarrutu.pythonanywhere.com/" target="_blank" class="btn btn-primary btn-sm w-100 mb-2">
                                         <i class="fas fa-external-link-alt me-2"></i>View Live Demo
                                     </a>
-                                    <small class="text-muted d-block">Click to see the deployed application</small>
+                                    <small class="text-muted d-block">Predict house prices accurately</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI Recipe Generator Project -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="project-card">
+                        <div class="card-body p-4">
+                            <div class="row align-items-center">
+                                <div class="col-md-8">
+                                    <h4 class="card-title mb-3">
+                                        <i class="fas fa-utensils recipe-icon me-2"></i>
+                                        AI Recipe Generator using Generative AI
+                                    </h4>
+                                    <p class="card-text mb-3">
+                                        Developed an innovative AI-powered recipe generator using advanced text generation models to create personalized
+                                        recipes based on user-input ingredients. Implemented sophisticated prompt handling and output formatting
+                                        for enhanced usability. The system intelligently combines ingredients to suggest creative and practical
+                                        cooking recipes.
+                                    </p>
+                                    <div class="mb-3">
+                                        <span class="skill-tag python-skill">Python</span>
+                                        <span class="skill-tag ai-skill">Text Generation Model</span>
+                                        <span class="skill-tag data-skill">Pandas</span>
+                                        <span class="skill-tag ai-skill">Generative AI</span>
+                                        <span class="skill-tag">Flask</span>
+                                    </div>
+                                    <div class="key-features">
+                                        <h6><i class="fas fa-check-circle text-success me-2"></i>Key Features:</h6>
+                                        <ul class="list-unstyled">
+                                            <li><i class="fas fa-caret-right text-primary me-2"></i>AI-powered recipe generation from ingredients</li>
+                                            <li><i class="fas fa-caret-right text-primary me-2"></i>Intelligent prompt handling for better results</li>
+                                            <li><i class="fas fa-caret-right text-primary me-2"></i>User-friendly interface with personalized suggestions</li>
+                                            <li><i class="fas fa-caret-right text-primary me-2"></i>Creative recipe combinations and cooking instructions</li>
+                                            <li><i class="fas fa-caret-right text-primary me-2"></i>Optimized output formatting for readability</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 text-center">
+                                    <div class="project-demo mb-3">
+                                        <i class="fas fa-utensils recipe-icon fa-5x mb-3"></i>
+                                        <div class="demo-stats">
+                                            <div class="stat-item">
+                                                <strong>Technology</strong>
+                                                <p>Generative AI</p>
+                                            </div>
+                                            <div class="stat-item">
+                                                <strong>Domain</strong>
+                                                <p>Food & Culinary</p>
+                                            </div>
+                                            <div class="stat-item">
+                                                <strong>Deployment</strong>
+                                                <p>PythonAnywhere</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="https://rutuja6856.pythonanywhere.com/" target="_blank" class="btn btn-primary btn-sm w-100 mb-2">
+                                        <i class="fas fa-external-link-alt me-2"></i>View Live Demo
+                                    </a>
+                                    <small class="text-muted d-block">Generate recipes with AI</small>
                                 </div>
                             </div>
                         </div>
@@ -713,26 +884,55 @@
     <!-- Education Section -->
     <section id="education" class="section-padding">
         <div class="container">
-            <h2 class="section-title">Education</h2>
-            <div class="row justify-content-center">
+            <h2 class="section-title">Education & Experience</h2>
+            <div class="row">
                 <div class="col-lg-8">
-                    <div class="card">
+                    <div class="card mb-4">
                         <div class="card-body p-4">
+                            <h5 class="mb-3">
+                                <i class="fas fa-graduation-cap text-primary me-2"></i>Academic Qualifications
+                            </h5>
                             <div class="education-timeline">
                                 <div class="education-item">
-                                    <h5 class="mb-2">Master of Computer Applications (BCA)</h5>
-                                    <h6 class="text-primary">Savitribai Phule Pune University, Kolhapur</h6>
-                                    <p class="text-muted mb-1">2025</p>
-                                    <div class="cgpa-badge">CGPA: 8.07/10.0</div><br>
-                                    <h7 class="mb-2">Bachelor of Computer Applications (BCA)</h7>
-                                    <h8 class="text-primary">Shivaji University, Kolhapur</h8>
-                                    <p class="text-muted mb-1">2023</p>
+                                    <h6 class="mb-2">Master of Computer Applications (MCA)</h6>
+                                    <p class="text-primary mb-1">Savitribai Phule Pune University</p>
+                                    <p class="text-muted mb-1">2023-2025</p>
+                                    <div class="cgpa-badge">CGPA: 8.07/10.0</div>
+                                    <p class="mt-2 mb-3">
+                                        Advanced coursework in Data Science, Machine Learning, Artificial Intelligence,
+                                        and software development methodologies.
+                                    </p>
+                                </div>
+                                <div class="education-item">
+                                    <h6 class="mb-2">Bachelor of Computer Applications (BCA)</h6>
+                                    <p class="text-primary mb-1">Shivaji University, Kolhapur</p>
+                                    <p class="text-muted mb-1">2020-2023</p>
                                     <div class="cgpa-badge">CGPA: 8.37/10.0</div>
                                     <p class="mt-2 mb-0">
                                         Strong foundation in computer science fundamentals, programming languages,
                                         database management, and software engineering principles.
                                     </p>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-body p-4">
+                            <h5 class="mb-3">
+                                <i class="fas fa-briefcase text-primary me-2"></i>Professional Experience
+                            </h5>
+                            <div class="internship-item">
+                                <h6 class="mb-2">Data Science Intern</h6>
+                                <p class="text-primary mb-1">Anyatam Adhyayan Education Pvt. Ltd.</p>
+                                <p class="text-muted mb-2">Mar 2025 - Aug 2025</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check-circle text-success me-2"></i>Data cleaning and preprocessing</li>
+                                    <li><i class="fas fa-check-circle text-success me-2"></i>Data visualization and analysis</li>
+                                    <li><i class="fas fa-check-circle text-success me-2"></i>Building predictive models</li>
+                                    <li><i class="fas fa-check-circle text-success me-2"></i>Real-world analytics projects</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -746,12 +946,12 @@
         <div class="container">
             <h2 class="section-title">Certifications</h2>
             <div class="row justify-content-center">
-                <div class="col-lg-8 text-center">
+                <div class="col-lg-10 text-center">
                     <div class="card">
                         <div class="card-body p-4">
                             <div class="certification-badge">
                                 <i class="fas fa-certificate me-2"></i>
-                                AICTE ATAL Data Science Certificate
+                                Data Science and Machine Learning - Adhyayan IT Training & Placement Institute
                             </div>
                             <div class="certification-badge">
                                 <i class="fab fa-java me-2"></i>
@@ -805,6 +1005,9 @@
                                 <a href="https://www.linkedin.com/in/rutuja-pawar-b15006254" target="_blank" class="social-link social-linkedin" title="LinkedIn Profile">
                                     <i class="fab fa-linkedin-in"></i>
                                 </a>
+                                <a href="https://github.com/rutuja-6856" target="_blank" class="social-link" style="background: #333;" title="GitHub Profile">
+                                    <i class="fab fa-github"></i>
+                                </a>
                                 <a href="mailto:pawarrutuja366@gmail.com" class="social-link social-email" title="Send Email">
                                     <i class="fas fa-envelope"></i>
                                 </a>
@@ -817,7 +1020,7 @@
                         <div class="cta-section mt-4 p-4" style="background: var(--bg-gradient); border-radius: 15px; color: white;">
                             <h4 class="mb-3">Ready to Transform Data into Insights?</h4>
                             <p class="mb-3">
-                                I'm actively seeking opportunities as a Data Scientist or ML Engineer.
+                                I'm actively seeking opportunities as a Data Scientist or Data Analyst.
                                 Let's discuss how my expertise in Python, Machine Learning, and AI can drive
                                 innovation and business growth for your organization.
                             </p>
@@ -849,7 +1052,7 @@
                     <div class="mt-3">
                         <small class="text-muted">
                             Keywords: Data Science, Machine Learning, Artificial Intelligence, Python, Deep Learning,
-                            Statistical Analysis, Data Analytics.
+                            Statistical Analysis, Data Analytics, Predictive Modeling, Healthcare AI, Real Estate ML, Generative AI.
                         </small>
                     </div>
                 </div>
@@ -967,7 +1170,7 @@
         `;
         document.head.appendChild(style);
 
-        // Add typing effect to hero title (optional enhancement)
+        // Add typing effect to hero title
         function typeWriter(element, text, speed = 100) {
             let i = 0;
             element.innerHTML = '';
@@ -988,11 +1191,10 @@
             typeWriter(heroTitle, originalText, 150);
         });
 
-        // Add click tracking for portfolio analytics (optional)
+        // Add click tracking for portfolio analytics
         document.querySelectorAll('a[href^="http"], a[href^="mailto"], a[href^="tel"]').forEach(link => {
             link.addEventListener('click', function() {
                 console.log('Link clicked:', this.href);
-                // Here you could add analytics tracking if needed
             });
         });
 
@@ -1007,19 +1209,38 @@
             });
         });
 
-        // Preload critical resources
-        function preloadResource(url, type) {
-            const link = document.createElement('link');
-            link.rel = 'preload';
-            link.href = url;
-            link.as = type;
-            document.head.appendChild(link);
-        }
+        // Project card animations on scroll
+        const projectObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = 'slideInUp 0.8s ease forwards';
+                }
+            });
+        }, { threshold: 0.1 });
 
-        // Preload fonts and critical CSS
-        window.addEventListener('load', function() {
-            preloadResource('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap', 'style');
+        document.querySelectorAll('.project-card').forEach(card => {
+            projectObserver.observe(card);
         });
+
+        // Add slide in animation
+        const slideStyle = document.createElement('style');
+        slideStyle.textContent = `
+            @keyframes slideInUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(50px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            .project-card {
+                opacity: 0;
+            }
+        `;
+        document.head.appendChild(slideStyle);
     </script>
 </body>
 </html>
